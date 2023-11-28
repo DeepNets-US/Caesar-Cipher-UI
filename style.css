@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* All Inputs */
+input {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: rgb(214, 51, 132);
+}
+
+input:focus {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    opacity: 0.5;
+}
+
+.headtxt span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* User Section */
+.userSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* User Inputs  */
+.userInput {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.actBtns {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+.actBtns button {
+    width: 50%;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.5s ease;
+}
+
+.actBtns button:hover {
+    color: rgb(214, 51, 132);
+    border-bottom: 2px solid rgb(214, 51, 132);
+}
+
+.actBtns input {
+    width: 50%;
+}
+
+/* More on Caesar Cipher */
+.desHead {
+    font-size: 1.2em;
+}
+
+/* Sub headings */
+code {
+    position: relative;
+}
+
+code::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+code:hover::after {
+    width: 100%;
+}
+
+.subHead:hover .subHeadIcon {
+    color: white;
+}
+
+/* Responsive Website */
+@media (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}

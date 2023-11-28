@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher - DeepNets</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom files -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header p-2 sticky-top bg-dark">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#workingTxt">Working</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#featuresTxt">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#historyTxt">History</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- User Interation -->
+    <div class="userSection p-5">
+        <div class="userInput">
+            <input id="userMsg" type="text" placeholder="What's your Message?">
+        </div>
+        <div class="actBtns">
+            <button class="btn" id="rndbtn">Random</button>
+            <input type="number" placeholder="Shift?" id="shiftParam">
+        </div>
+
+
+        <!-- Encoded Output -->
+        <div class="encodedOutput w-100 p-2 fs-3 text-center">
+            <code id="encodedTxt">Message?</code>
+        </div>
+
+    </div>
+
+    <!-- What is Caesar Cipher? -->
+    <div class="caesarInfo w-100 p-5 mt-1" id="caesarInfo">
+        <div class="infoHeading w-100">
+            <h1 class="infoHeadingTxt"><code class="fs-1 fw-bold">More about Caesar Cipher!</code>
+            </h1>
+        </div>
+
+        <div class="infoPara p-2">
+            <p>The Caesar Cipher stands as one of the earliest and simplest encryption techniques, dating back to
+                Julius Caesar's time. This ingenious method is based on the substitution cipher, where each letter in
+                the plaintext message is shifted a certain number of places down or up the alphabet.
+            </p>
+
+            <!-- How it works -->
+            <h1 class="subHead" id="workingTxt"><code><span class="subHeadIcon">></span> How It Works</code></h1>
+
+            <ul>
+                <li>
+                    <p><code class="desHead">Substitution Technique :</code> The algorithm operates by substituting each
+                        letter in the
+                        original message with a letter a fixed number of positions away in the alphabet. For instance, a
+                        shift of
+                        3 replaces 'A' with 'D,' 'B' with 'E,' and so on.
+                    </p>
+                </li>
+
+                <li>
+                    <p><code class="desHead">Encryption Process :</code>
+                        During encryption, each letter in the message is shifted based on the chosen key or shift value.
+                        This transforms the plaintext into ciphertext, making it unreadable to anyonewithout the key.
+                    </p>
+                </li>
+
+
+                <li>
+                    <p><code class="desHead">Decryption Technique :</code> To decrypt the message, the process is
+                        reversed. Knowing the key, the recipient can shift each letter in the ciphertext back to its
+                        original position in the alphabet, revealing the plaintext.
+                    </p>
+                </li>
+
+            </ul>
+
+            <!-- Features and Applicability -->
+            <h1 class="subHead" id="featuresTxt">
+                <code><span class="subHeadIcon">></span> Features and Applicability</code>
+            </h1>
+
+            <ul>
+                <li>
+                    <p><code class="desHead">Simplicity and Elegance :</code> Despite its simplicity, the Caesar Cipher
+                        served as a foundation for more
+                        complex encryption methods. Its ease of use and implementation make it an excellent starting
+                        point for
+                        learning about encryption.
+                    </p>
+                </li>
+
+                <li>
+                    <p><code class="desHead">Limitations :</code> The algorithm's vulnerability lies in its
+                        susceptibility to brute-force attacks due
+                        to the limited number of possible keys (only 25 variations for the English alphabet). This makes
+                        it less
+                        secure for transmitting highly sensitive information.
+                    </p>
+                </li>
+            </ul>
+
+            <!-- History of the game -->
+            <h1 class="subHead" id="historyTxt">
+                <code><span class="subHeadIcon">></span> Game History</code>
+            </h1>
+
+            <ul>
+                <li>
+                    <p><code class="desHead">Origin :</code>
+                        Legend has it that Julius Caesar used this cipher to secure his military communications. The
+                        cipher is a form of substitution encryption, where each letter in the plaintext is shifted a
+                        certain number of places down or up the alphabet.
+                    </p>
+                </li>
+
+                <li>
+                    <p><code class="desHead">Legacy :</code> The cipher's legacy continues to captivate the world of
+                        cryptography, serving as an educational tool to introduce encryption concepts to students and
+                        enthusiasts alike. Its historical significance and straightforward implementation make it an
+                        essential part of understanding the evolution of cryptography.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
