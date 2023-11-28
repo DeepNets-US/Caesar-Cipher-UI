@@ -20,6 +20,7 @@ Welcome to the Caesar Cipher UI, where ancient encryption meets modern design! T
 
 ## UI Preview
 
+![image](https://github.com/DeepNets-US/Caesar-Cipher-UI/assets/118154709/dd3d39e6-c424-46b1-bbaf-4380f9269c1e)
 
 ## Technologies Used
 
