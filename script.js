@@ -7,15 +7,13 @@ function encode(message, shift) {
         let char = message[i];
 
         // Check if the character is a letter
-        if (char.match(/[a-z]/i)) {
-            let code = message.charCodeAt(i);
+        let code = message.charCodeAt(i);
 
-            // Determine the case of the letter (uppercase or lowercase)
-            if (code >= 65 && code <= 90) { // Uppercase letters (A-Z)
-                char = String.fromCharCode((code + shift));
-            } else if (code >= 97 && code <= 122) { // Lowercase letters (a-z)
-                char = String.fromCharCode((code + shift));
-            }
+        // Determine the case of the letter (uppercase or lowercase)
+        if (code >= 65 && code <= 90) { // Uppercase letters (A-Z)
+            char = String.fromCharCode((code + shift));
+        } else if (code >= 97 && code <= 122) { // Lowercase letters (a-z)
+            char = String.fromCharCode((code + shift));
         }
         encodedMessage += char; // Append the processed character to the encoded message
     }
